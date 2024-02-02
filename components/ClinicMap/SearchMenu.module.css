@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+.searchMenu {
+    width: 600px; /* o el ancho que prefieras */
+    background: #fff;
+   
+    border-radius: 4px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .searchBar {
+    display: flex;
+    margin-bottom: 20px;
+    width: 620px;
+    height: 70px;
+    color: #718096;
+
+  }
+  
+  .input {
+    flex-grow: 1;
+    border: 1px solid #718096;
+    padding: 10px;
+    border-radius: 35px;
+    margin-right: 10px;
+    color: #718096;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    font-style: normal;
+  }
+  
+  .searchButton {
+    background: #eee;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .clinicList {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-height: 400px; /* Ajusta según la altura deseada */
+    overflow-y: auto;
+    
+  }
+
+  
+  .clinicItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    border-bottom: 1px solid  #718096;
+    color: #718096;
+    cursor: pointer;
+    
+  }
+  .clinicItem:hover{
+    background-color: #e8e8e8;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+    
+  }
+  
+  
+  .clinicCount {
+    padding: 2px 8px;
+    font-size: 0.8rem;
+    color: #718096;
+   
+  }
+  .clinicCount:hover{
+    color: #e70873 ;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+  }
+  
+  .button {
+    margin-top: 20px;
+    width: 40%;
+    height: 30px;
+    background: #00309e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Gilroy-light', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    font-style: normal;
+
+   
+  }
+  .buttonContainer{
+    display: flex;
+    align-items: center;
+   justify-content: center;
+  }
+  
+.iconButton{
+  padding-right: 8px; /* Ajusta el valor según sea necesario */
+}
+.button:hover{
+  color: #00309e;
+  background-color: white;
+  border: solid 1px;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+}

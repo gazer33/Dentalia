@@ -1,0 +1,52 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+
+.tituloClinica{
+    background-color: #ffffff;
+    padding-top: 40px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #00309e;
+}
+.tituloClinica h2{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 48px;
+    font-style: normal;
+    
+}
+.description{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #718096;
+    line-height: 60px
+}
+.ClinicList {
+    display: flex; /* Muestra los elementos en línea */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: space-between; /* Espacio entre los elementos */
+    padding: 100px; /* Ajusta según tus necesidades */
+  }
+  
+  /* Estilos para el contenedor de la imagen */
+  .imageContainer {
+    flex-grow: 1; /* Permite que ocupe el espacio disponible */
+    
+}
+  
+  /* Estilos para el contenedor del menú de búsqueda */
+  .searchMenuContainer {
+    width: 900px; /* Ancho del menú de búsqueda */
+    height: 100%; /* Asegura que el contenedor ocupe toda la altura disponible */
+    display: flex; /* Muestra los elementos en línea */
+    flex-direction: column; /* Apila los elementos verticalmente */
+    justify-content: center; /* Centra verticalmente el contenido */
+    align-items: center; /* Centra horizontalmente el contenido */
+   
+  }
+  

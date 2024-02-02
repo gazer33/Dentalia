@@ -1,0 +1,16 @@
+
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px; /* Espacio arriba de la imagen */
+    border-radius: 25px 25px 25px 25px ;
+  }
+  
+  /* Ajustes para que la imagen sea responsive */
+  @media (max-width: 600px) {
+    .image-container {
+      margin-top: 10px;
+    }
+  }
+  

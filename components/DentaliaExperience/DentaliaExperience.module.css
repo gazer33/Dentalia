@@ -1,0 +1,14 @@
+.experienceContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background: #f0f4f8; /* O el color de fondo que corresponda */
+  padding: 20px; /* Ajusta el padding según tu diseño */
+}
+.line {
+  height: 200px;
+  width: 1px;
+  background-color: #465e95; /* Ajusta el color según tu diseño */
+  margin: 0 20px; /* Ajusta el espaciado según tu diseño */
+  align-self: center; /* Centra la línea verticalmente */
+}

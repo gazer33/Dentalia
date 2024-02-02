@@ -1,0 +1,78 @@
+
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20878');
+
+.list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Esto distribuirá el espacio de manera uniforme */
+    max-width: 1200px; /* Ajusta esto según el ancho máximo que prefieras */
+    margin: 0 auto; /* Esto centrará tu contenedor si tiene un ancho máximo */
+   
+
+}
+.testimonialsTitle {
+    text-align: center;
+    color: #00309e;
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-family: 'Gilroy-Light', sans-serif;
+    line-height: 25px;
+    font-weight: 300;
+    font-style: normal;
+}
+.star{
+    line-height: 30px;
+    color: #00309e;
+    
+    
+}
+
+.testimonials {
+    background-color: #ffffff; /* Cambia al color de fondo deseado */
+    border-radius: 8px;
+    padding: 20px;
+    margin: 10px; /* Centrar las tarjetas */
+    max-width: 400px; /* Ajustar según el ancho deseado */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Centra todo el texto dentro del contenedor */
+    flex-basis: calc(33.333% - 20px); /* Esto hará que cada tarjeta tenga un tercio del ancho del contenedor menos el margen */
+  /* Resto de tu estilo aquí */
+}
+
+.author {
+    display: flex;
+    flex-direction: column; /* Cambiar la dirección de flex a columna */
+    align-items: center; /* Centrar los elementos en el eje cruzado */
+    gap: 10px; /* Espacio entre la imagen y el texto */
+}
+
+
+
+.author p {
+    
+    font-size: 0.9em;
+    color: #555;
+}
+
+.testimonials h3 {
+    font-size: 20px;
+    color: #000;
+    margin-bottom: 10px;
+    font-weight: normal; /* Si deseas que el texto no sea en negrita */
+    line-height: 1.4; /* Espaciado de línea para mejor lectura */
+    font-family: 'Gilroy-Light', sans-serif;
+    line-height: 25px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+
+/* Estilo para las estrellas y el texto de ranking */
+
+
+/* Espacio alrededor de cada tarjeta de testimonio */
+.testimonials + .testimonials {
+    margin-top: 20px;
+}
+

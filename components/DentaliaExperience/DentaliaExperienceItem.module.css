@@ -1,0 +1,42 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold?styles=20878');
+
+.item {
+  width: 22%; /* Esto permite que los ítems tengan espacio uniforme */
+  display: flex;
+  flex-direction: column;
+  font-family: 'Gilroy-Light', sans-serif;
+ 
+}
+.item:hover{
+  cursor: pointer;
+}
+
+.icon {
+  margin-bottom: 20px; /* Ajusta esto según tu diseño */
+  color: #00309e;
+}
+
+.title {
+  font-size: 20px; /* Ajusta el tamaño de la fuente según tu diseño */
+  color: #00309e; /* Ajusta el color según tu diseño */
+  margin-bottom: 20px;
+  font-family: 'Gilroy-Light', sans-serif;
+  line-height: 25px;
+  font-weight: 300;
+  font-style: normal;
+  
+}
+
+
+.description {
+  font-size: 16px; /* Ajusta el tamaño de la fuente según tu diseño */
+  color: #718096; /* Ajusta el color según tu diseño */
+  font-family: 'Gilroy-Light', sans-serif;
+  line-height: 25px;
+  font-weight: 300;
+  font-style: normal;
+}
+.experienceContainer{
+ background-color: white;
+ 
+}
