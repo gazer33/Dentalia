@@ -1,0 +1,47 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+
+.tecnologiaText{
+    padding-top: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #00309e;
+}
+.tecnologiaText h2{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 37px;
+    font-style: normal;
+}
+.description{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 20px ;
+    color: #718096;
+   padding: 25px;
+   text-align: center;
+
+   
+}
+.divDescription{
+    
+    padding-left: 8%;
+    
+}
+.imagesRow{
+    display: flex; /* Esto alinea tus imágenes en una fila */
+    justify-content: center; /* Esto centra las imágenes en el contenedor si hay espacio adicional */
+    align-items: center;
+    padding: 25px;
+}
+.imagesTec{
+    padding: 15px; /* Añade algo de espacio entre las imágenes */
+}
+
+@media (max-width: 1200px) {
+    .imagesTec {
+      width: 100%;
+      max-width: 400px; /* o la anchura máxima que prefieras */
+    }
+  }

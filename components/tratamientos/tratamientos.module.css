@@ -1,0 +1,116 @@
+@import url('https://fonts.cdnfonts.com/css/gilroy-bold');
+
+.tratamientosTitulo{
+    padding-top: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   color: #00309e;
+}
+.tratamientosTitulo h2{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+    font-style: normal;
+}
+.tratamientosDes{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px ;
+    color: #718096;
+   padding: 25px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   text-align: center;
+}
+.imagesRow{
+    display: flex; /* Esto alinea tus imágenes en una fila */
+    justify-content: center; /* Esto centra las imágenes en el contenedor si hay espacio adicional */
+    align-items: center;
+    padding: 35px;
+    
+}
+.imagesTra{
+    padding: 30px; /* Añade algo de espacio entre las imágenes */
+}
+.columnImage{
+    display: flex;
+    flex-direction: column;
+   
+    width: 390px;
+    padding: 14px; /* Añade algo de espacio entre las imágenes */
+}
+.subtitulo{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 22px ;
+    color: #00309e;
+    padding-left: 8%;
+}
+.columnImage p{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 16px ;
+    color: #718096;
+    padding: 23px;
+}
+/* components/MyButton.module.css */
+.myButton {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    color: #00309e;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    display: inline-flex;
+    align-items: center;
+    padding-left: 20px;
+    text-align: left;
+}
+
+  
+  .plusSign {
+    color: #00309e; /* Cambia esto por el color que necesites */
+    margin-right: 8px;
+    font-size: 40px; /* Ajusta el tamaño según lo necesites */
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    padding-right: 10px;
+}
+.label{
+    position: relative;
+    transition: transform 0.3s ease; /* Anima el transform para la etiqueta también si es necesario */
+
+}
+
+.label::after {
+    content: '';
+    position: absolute;
+    right: 0px;
+    top: 40px;
+    bottom: -40px; /* Ajusta la posición vertical de la línea según sea necesario */
+    width: 10rem;
+    height: 1px; /* Ajusta el grosor de la línea aquí */
+    background-color: blue; /* Ajusta el color de la línea aquí */
+    transition: background-color 0.3s; /* Suaviza el cambio de color de la línea */
+
+  }
+  .myButton:hover {
+    transform: scale(1.10); /* Aumenta el tamaño del botón en un 5% */
+  }
+  
+  /* Agrega los estilos adicionales que necesites aquí, por ejemplo, para hover */
+  .myButton:hover .label::after {
+    background-color: darkblue; /* Cambia el color de la línea al hacer hover si es necesario */
+  }
+  
+  
+@media (max-width: 1200px) {
+    .imagesTra {
+      width: 100%;
+      max-width: 400px; /* o la anchura máxima que prefieras */
+    }
+  }

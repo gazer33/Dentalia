@@ -2,32 +2,10 @@ import React from 'react';
 import styles from './SearchMenu.module.css';
 import { FaLocationArrow } from "react-icons/fa";
 import { BsArrowUpRightCircle } from "react-icons/bs";
+import { useState } from 'react';
+import { CiSearch } from "react-icons/ci";
+import Clinics from './SearchMenuItem'
 
-interface Clinic {
-  id: number;
-  name: string;
-  count: number;
-}
-
-const clinics: Clinic[] = [
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  { id: 1, name: 'Chihuahua', count: 2 },
-  { id: 2, name: 'Ciudad de México', count: 25 },
-  // ... Añade más clínicas aquí
-];
 
 const SearchMenu: React.FC = () => {
   return (
@@ -35,11 +13,11 @@ const SearchMenu: React.FC = () => {
       <div className={styles.searchBar}>
         <input className={styles.input} type="text" placeholder="Buscar clínica" />
         <button className={styles.searchButton}>
-          {/* Icono de búsqueda */}
+          {<CiSearch size={25} />}
         </button>
       </div>
       <ul className={styles.clinicList}>
-        {clinics.map(clinic => (
+        {Clinics.map(clinic => (
           <li key={clinic.id} className={styles.clinicItem}>
             <span className={styles.clinicName}>{clinic.name}</span>
             <span className={styles.clinicCount}> <BsArrowUpRightCircle /> {clinic.count} Clínicas</span>

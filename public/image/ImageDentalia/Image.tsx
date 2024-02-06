@@ -6,11 +6,10 @@ const ImageDentalia = () => {
 
         <div className={styles.imageContainer}>
         <Image
-          src="/carousel/carreteMujer.png" // Ruta de tu imagen
+          src="/image/carousel/carreteMujer.png" // Ruta de tu imagen
           alt="Descripción de la imagen"
-          width={500} // Ancho deseado de la imagen
-          height={300} // Altura deseada de la imagen
-          layout="responsive" // Esto hace que la imagen sea responsive
+          width={1400} // Ancho deseado de la imagen
+          height={500} // Altura deseada de la imagen
         />
       </div> 
     )

@@ -6,6 +6,10 @@ import DentaliaExperience from '../../components/DentaliaExperience/DentaliaExpe
 import styles from './page.module.css'
 import Testimonials from '../../components/testimonials/testimonials'
 import ClinicList from '../../components/ClinicMap/ClinicList';
+import './globals.css'
+import Tecnologia from '../../components/tecnologia/tecnologia';
+import Tratamientos from '../../components/tratamientos/tratamientos';
+import QuienesSomos from '../../components/QuienesSomos/QuienesSomos';
 const DentalPage: React.FC = () => {
   return (
     <div>
@@ -13,7 +17,7 @@ const DentalPage: React.FC = () => {
         <Banner />
       </header>
       
-     <ImageDentalia />
+      <ImageDentalia />
      <div className={styles.tituloExperiencia}>
       <h2 >
         Vive la experiencia dentalia
@@ -27,6 +31,16 @@ const DentalPage: React.FC = () => {
      <Testimonials />
      </section>
      <ClinicList />
+
+     <section className={styles. tecnologia}>
+      <Tecnologia />
+
+    <Tratamientos />
+
+     </section>
+     <section className={styles.QuienesSomos}>
+      <QuienesSomos />
+     </section>
     </div>
   );
 };

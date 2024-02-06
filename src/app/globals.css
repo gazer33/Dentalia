@@ -23,6 +23,28 @@
 }
 
 
+/* Estilos generales para todas las barras de desplazamiento */
+::-webkit-scrollbar {
+  width: 7px; /* o el ancho que prefieras */
+  height: 7px; /* necesario para barras de desplazamiento horizontales */
+}
+
+/* Estilo para el track de la barra de desplazamiento */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* o el color de fondo que prefieras */
+  border-radius: 8px; /* si quieres bordes redondeados */
+}
+
+/* Estilo para la thumb de la barra de desplazamiento */
+::-webkit-scrollbar-thumb {
+  background: #888; /* o el color que prefieras */
+  border-radius: 8px; /* si quieres bordes redondeados */
+}
+
+/* Estilo para la thumb de la barra de desplazamiento al pasar el mouse */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* o el color que prefieras cuando el mouse esté encima */
+}
 
 
 
