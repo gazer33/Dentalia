@@ -10,8 +10,11 @@ import './globals.css'
 import Tecnologia from '../../components/tecnologia/tecnologia';
 import Tratamientos from '../../components/tratamientos/tratamientos';
 import QuienesSomos from '../../components/QuienesSomos/QuienesSomos';
+import Beneficios from '../../components/Beneficios/Beneficios';
+import BlanqueamientoDental from '../../components/BlanqueamientoDental/BlanqueamientoDental';
 const DentalPage: React.FC = () => {
   return (
+    <body className={styles.body}>
     <div>
       <header>
         <Banner />
@@ -41,7 +44,16 @@ const DentalPage: React.FC = () => {
      <section className={styles.QuienesSomos}>
       <QuienesSomos />
      </section>
+<section className={styles.beneficios}>
+    <Beneficios />
+    </section>
+
+    <section>
+    <BlanqueamientoDental />
+    </section>
+
     </div>
+    </body>
   );
 };
 

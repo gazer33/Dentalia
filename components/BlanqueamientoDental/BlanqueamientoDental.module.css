@@ -1,0 +1,151 @@
+.Blanqueamiento{
+    background-color: #d1e4ee ;
+   display: flex;
+   flex-wrap: wrap;
+}
+.titleContainer h2{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    font-size: 32px ;
+    color: #00309e;
+    
+}
+.titleContainer h2{
+    
+    width: 640px;
+    margin-top: 10%;    
+    margin-left: 10%;
+
+}
+.btnTitleContainer{
+    margin-left: 10%;
+    margin-top: 30px;
+}
+.imageContainer{
+    display: flex;
+    align-items: end;
+    height: 560px;
+}
+.preguntasImgContainer{
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.pregunta1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 75px;
+    width: 470px;
+}
+
+.pregunta1 p{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    color: #718096;
+    font-size: 22px;
+}
+.pregunta2 p{
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    color: #718096;
+    font-size: 22px;
+}
+.btnPregunta1{
+    margin-top: 45px;
+}
+.pregunta2{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 75px;
+    
+    width: 290px;
+
+}
+.btnPregunta2{
+    margin-top: 45px;
+}
+
+.logo{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+    margin-right: 8px;
+    width: 100%;
+  
+    
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myButton {
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    color: #00309e;
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 150px
+}
+
+.btnLine{
+width: 100%;
+height: 1px;
+background-color: #00309e;
+margin-top: 10px;
+}
+.plusSign {
+    color: #00309e; /* Cambia esto por el color que necesites */
+    font-size: 40px; /* Ajusta el tamaño según lo necesites */
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 300;
+    padding-right: 10px;
+}
+.label{
+    position: relative;
+    transition: transform 8.3s ease; /* Anima el transform para la etiqueta también si es necesario */
+
+}
+.myButton:hover {
+    transform: scale(1.10); /* Aumenta el tamaño del botón en un 5% */
+  }
+  
+  /* Agrega los estilos adicionales que necesites aquí, por ejemplo, para hover */
+  .myButton:hover .label::after {
+    background-color: darkblue; /* Cambia el color de la línea al hacer hover si es necesario */
+  }
+  .btnContainer{
+    margin-top: 45px;
+  }
+  .btn{
+    width: 130px;
+    height: 50px;
+    border-radius: 10px;
+    border: none;
+    background-color: #00309e;
+    color: white;
+    font-family: 'Gilroy-Light', sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+  }
+
+  .btn:hover{
+    background-color: white;
+    border: 1px solid;
+    border-color: #00309e;
+    color: #00309e;
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
+
+  }
