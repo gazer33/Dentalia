@@ -12,14 +12,16 @@ import Tratamientos from '../../components/tratamientos/tratamientos';
 import QuienesSomos from '../../components/QuienesSomos/QuienesSomos';
 import Beneficios from '../../components/Beneficios/Beneficios';
 import BlanqueamientoDental from '../../components/BlanqueamientoDental/BlanqueamientoDental';
+import FoDentalia from '../../components/Footer/FoDentalia'
+import Message from '../../components/Message/message';
 const DentalPage: React.FC = () => {
   return (
-    <body className={styles.body}>
-    <div>
+    
+    <div className={styles.body}>
       <header>
         <Banner />
       </header>
-      
+      <Message />
       <ImageDentalia />
      <div className={styles.tituloExperiencia}>
       <h2 >
@@ -50,10 +52,21 @@ const DentalPage: React.FC = () => {
 
     <section>
     <BlanqueamientoDental />
-    </section>
+    </section>  
 
+    <section className={styles.footer}>
+
+
+    </section>
+    <section>
+      <FoDentalia />
+    </section>
     </div>
-    </body>
+    
+    
+   
+    
+    
   );
 };
 

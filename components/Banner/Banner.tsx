@@ -4,12 +4,14 @@ import styles from './Banner.module.css';
 import { fromJSON } from "postcss";
 import Image from "next/image";
 import { FaPhone } from "react-icons/fa6";
+import { IoIosMenu } from "react-icons/io";
+import { IoClose } from "react-icons/io5";
 
 
 
 const Banner = () => {
   return (
-    <header>
+    <>
    <div className={styles.banner}>
   <p>
     Obtén una valoración dental integral GRATIS en tu 1ra cita. 
@@ -18,10 +20,15 @@ const Banner = () => {
     </a>
   </p>
 </div>
+
+
+
 <div className={styles.header}> 
+
   <div className={styles.logoContainer}>
     <Image src="/image/Logo.png" alt="Logo" width={115} height={50} />
   </div>
+  
   <nav className={styles.navigation}>
    <a href="#" className="text-gray-700 hover:text-gray-900">Quienes somos</a>
         <a href="#">Clinicas </a>
@@ -30,19 +37,18 @@ const Banner = () => {
         <a href="#">Cobertura dental </a>
         <a href="#">Blog </a>
   </nav>
-  <div className={styles.ctaContainer}>
-    
-      <a href="#" className={styles.llamanos}><FaPhone /> Llámanos 
+  <div className={styles.btnsContainer}>
+    <button className={styles.llamanos}><FaPhone /> Llámanos </button>
+    <button className={styles.Agenda}>Agenda Gratis </button>
 
-      </a>
-      
-    <a href="#" className={styles.Agenda}>Agenda Gratis</a>
   </div>
+<label htmlFor="check" className={styles.iconMenuOpen}> <IoIosMenu /> </label>
+
 </div>
 
    
  
-    </header>
+</>
   );
 };
 

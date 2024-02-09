@@ -1,0 +1,19 @@
+.circuleMsg{
+    width: 60px;
+    height: 60px;
+    background-color: #004a98;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+    position: fixed; 
+    
+  top: 93%; 
+  right: 0; 
+  transform: translateY(-50%); 
+  cursor: pointer;
+}
+
+

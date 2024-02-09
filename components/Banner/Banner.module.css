@@ -18,9 +18,7 @@
     text-decoration: underline;
   }
   
-  .banner a:hover {
-    color: #00b0f0;
-  }
+  
   .banner p{
     color: #0c3a98;
     font-size: 22px;
@@ -28,78 +26,65 @@
 
   
   
-  /* Añade estilos para tus enlaces aquí si es necesario */
-  /* styles.css o un módulo CSS correspondiente */
+
 .header {
+  height: 75px;
+  background-color: rgb(255, 255, 255);
   display: flex;
-  justify-content: space-between;
+  flex-direction: row;
   align-items: center;
-  background-color: #ffffff; /* Ajusta el color de fondo según sea necesario */
-  color: white;
-  padding: 0px 20px; /* Ajusta el padding según sea necesario */
-  height: 65px;
-  position: sticky;
-  top: 50px;
-  z-index: 100;
-  font-size: 20px;
+  width: 100%;
   }
   
   .logoContainer {
     display: flex;
     align-items: center;
+    margin-left: 60px;
+    margin-right: 0;
   }
   
   .logo-text {
-    margin-left: 10px;
     font-size: 0.8em; /* Ajusta el tamaño de la fuente según sea necesario */
   }
   .navigation {
     display: flex;
     justify-content: center;
-    flex-grow: 1; /* Permite que la navegación ocupe todo el espacio disponible */
-    
+    flex-grow: 2; 
+    padding: 0;
   }
   .navigation a {
-    margin:  20px; /* Ajusta el margen según sea necesario */
     text-decoration: none;
     color: #0c3a98;
     white-space: nowrap; /* Evita que los enlaces se envuelvan en múltiples líneas */
-    
+    margin-right: 40px;
+    font-family: 'Gilroy-Light', sans-serif;
+     font-weight: 300;   
+     font-size: 17px;
   }
   .navigation a:hover{
     color: #ee9880;
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
   }
   
-  .ctaContainer {
+  
+  .btnsContainer{
     display: flex;
-    align-items: center;
-    
+    margin-right: 50px;
+    margin-left: 0;
   }
+
   
-  .cta-button {
-    margin-left: 10px;
-    padding: 5px 15px; /* Ajusta el padding según sea necesario */
-    text-decoration: none;
-    border-radius: 5px; /* Ajusta el border-radius según sea necesario */
-    color: white;
-    background-color: #005ea9; /* Ajusta el color de fondo según sea necesario */
-  }
   
-  .cta-highlight {
-    background-color: #0070f3; /* Ajusta el color de fondo para el botón destacado según sea necesario */
-  }
  
   .llamanos {
-    
+    height: 52px;
+    width: 145px;
+    margin-right: 5px;
   border: solid 1px;
   color: #00309e;
-  padding: 15px 32px;
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   font-size: 15px;
-  margin: 4px 2px;
   cursor: pointer;
   border-radius: 12px;
   box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
@@ -113,20 +98,17 @@
     transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease; 
   }
   .Agenda{
+    height: 52px;
+    width: 145px;
     background-color: #00309e;
-    
     color: white;
-    padding:  14px 22px;
     text-align: center;
     text-decoration: none;
     text-align: center;
-    display: inline-block;
     font-size: 14px;
-    margin: 4px 2px;
     cursor: pointer;
     border-radius: 12px;
     box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
-   height: 20px;
   }
   .Agenda:hover{
     background-color: white;
@@ -144,3 +126,47 @@
   .menuItem:hover .dropdownMenu {
     display: block;
   }
+
+
+  .abrirMenu ,
+  .esconderMenu{
+    font-size: 30px;
+    cursor: pointer ;
+    display: none;
+    transition: 0.4s;
+    color: black;
+  }
+  .abrirMenu{
+    order: 1;
+  }
+  #check{
+    display: none;
+  }
+
+  
+@media (max-width: 760px) {
+  .header{
+    display: flex;
+    justify-content: space-between;
+  }
+  .logoContainer{
+    margin: 0;
+    margin-left: 10px;
+    padding: 0 0 ;
+  }
+  .navigation{
+    display: none;
+
+  }
+  .btnsContainer{
+    display: none;
+  }
+  .banner p, .banner a{
+    font-size: 18px;
+  }
+  .iconMenuOpen{
+    color: black;
+    font-size: 35px;
+    margin-right: 25px;
+  }
+}

@@ -8,8 +8,9 @@ const ImageDentalia = () => {
         <Image
           src="/image/carousel/carreteMujer.png" // Ruta de tu imagen
           alt="Descripción de la imagen"
-          width={1400} // Ancho deseado de la imagen
+          width={1360} // Ancho deseado de la imagen
           height={500} // Altura deseada de la imagen
+          layout='responsive'
         />
       </div> 
     )
