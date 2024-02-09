@@ -161,8 +161,14 @@
   .btnsContainer{
     display: none;
   }
+  .banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
   .banner p, .banner a{
-    font-size: 18px;
+    font-size: 15px;
   }
   .iconMenuOpen{
     color: black;
