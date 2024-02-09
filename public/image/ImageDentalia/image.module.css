@@ -1,5 +1,5 @@
 
-.image-container {
+.imageContainer {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,9 +8,14 @@
   }
   
   /* Ajustes para que la imagen sea responsive */
-  @media (max-width: 600px) {
-    .image-container {
+  @media (max-width: 760px) {
+    .imageContainer {
       margin-top: 10px;
+      height: 600px;
+    }
+    .ImageDentalia{
+      height: 600px;
+      width: 100%;
     }
   }
   
